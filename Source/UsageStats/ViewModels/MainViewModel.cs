@@ -283,7 +283,7 @@ Windows Explorer";
         {
             string path = Settings.ReportPath;
 
-            if (!String.IsNullOrEmpty(path))
+            /*if (!String.IsNullOrEmpty(path))
             {
                 if (!Directory.Exists(path))
                 {
@@ -297,7 +297,7 @@ Windows Explorer";
             {
                 Statistics s = kvp.Value;
                 SaveReport(s, Path.Combine(path, kvp.Key));
-            }
+            }*/
 
             PostReports(path);
         }
